@@ -4,15 +4,22 @@ let events = (()=>{
     let ulPagination_jumb = document.querySelector("#pagination");
     let pagination = ulPagination_jumb.querySelectorAll("li");
     let btnBurger = document.querySelector('#btnBurger');
+    let btnBurgerclose = document.querySelector('#close')
     let menu = document.querySelector('#menu');
     cacheDOM();
     function cacheDOM(){
         btnBurger.addEventListener('click',showMenu);
+        btnBurgerclose.addEventListener('click',closeMenu);
+    }
+
+    function closeMenu(){
+        menu.classList.remove('right-[-0.1rem]');
+        menu.classList.add('right-[-50rem]');
     }
 
     function showMenu(){
         menu.classList.remove('right-[-50rem]');
-        menu.classList.add('right-[-2rem]');
+        menu.classList.add('right-[-0.1rem]');
     }
     
     function changeImg(e){
