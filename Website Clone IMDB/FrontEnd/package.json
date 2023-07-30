@@ -2,8 +2,11 @@
   "devDependencies": {
     "tailwindcss": "^3.3.3"
   },
-  "scripts" : {
-    "build-css" : "tailwindcss build -i css/input.css -o css/output.css",
-    "watch-css" : "tailwindcss build -i css/input.css -o css/output.css --watch"
+  "scripts": {
+    "build-css": "tailwindcss build -i css/input.css -o css/output.css",
+    "watch-css": "tailwindcss build -i css/input.css -o css/output.css --watch"
+  },
+  "dependencies": {
+    "jquery": "^3.7.0"
   }
 }

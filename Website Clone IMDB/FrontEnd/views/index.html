@@ -7,19 +7,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 </head>
-<body>
+<body class="bg-gray-800">
   <!-- Navbar -->
-  <nav class=" h-20 flex bg-transparent items-center fixed  w-full z-50">
-    <div class="lg:container mx-auto flex items-center px-4">
-      <div class="bg-white rounded-full h-10 w-10 "></div>
-      <label class="search relative mx-auto">
-        <a href="#"class="absolute flex items-center right-5 font-sans inset-y-0">
-          <img src="../img/iconsax/Linear/searchnormal1.png" alt="iconSearch" class=" " width="25px">
-        </a>
-        <input type="text" name="search" placeholder="Search" class="px-5 h-10 w-96 rounded-full mx-auto bg-gray-400 active:bg-gray-500 text-white placeholder:text-white"/>
-      </label>
-      <button class="hover:bg-blue-700 hover:text-white border-2 border-blue-700 w-24 h-10 rounded-full text-blue-700 font-bold font-['Poppins']">LOGIN</button>
+  <nav class=" w-full h-14 fixed z-50 border border-red-400">
+    <div class="container relative md:px-2 mx-auto h-full border">
+        <div class="flex justify-end items-center md:hidden h-full mr-2">
+          <button id="btnBurger" class="bg-slate-800 px-3 pt-2 pb-1 rounded-lg flex">
+            <i class="fi fi-br-menu-burger text-white w-full h-full  m-auto"></i>
+          </button>
+        </div>
+        <div id="menu" class="md:flex md:h-full w-1/2 h-screen md:items-center md:w-full md:static md:bg-transparent bg-gray-600 fixed top-0 right-[-50rem]">
+          <button id="close" class="absolute border px-1 py-21 rounded-sm right-[1rem] top-[1rem] bg-white md:hidden">❌</button>
+          <ul class="md:flex md:items-center md:w-full w-80 md:p-0 p-2 md:h-full h-auto">
+            <li class="md:block flex my-3"><div class="bg-white rounded-full md:w-10 md:h-10 w-20 h-20 mr-2"></div></li>
+            <li class=" my-3 relative w-2/3 flex items-center">
+              <a href="#" class="md:absolute md:right-3 absolute right-2"><img src="../img/Iconsax/Linear/searchnormal1.png" alt="" class="w-5 h-5"></a>
+              <input type="text" name="search" class="bg-slate-400 rounded-full h-8 md:w-80 w-full">
+            </li>
+            <button class="my-3">
+              <button type="button" class="bg-slate-400 text-white text-sm rounded-lg  px-2 py-1 font-sans font-bold md:mr-2">Login</button>
+              <button type="button" class="bg-slate-400 text-white text-sm rounded-lg  px-2 py-1 font-sans font-bold">Register</button>
+            </li>
+          </ul>
+        </div>
     </div>
   </nav>
     <!-- end Navbar -->
@@ -56,200 +68,10 @@
       <div id="group1" class="my-10">
         <div class="lg:container px-10 mx-auto">
             <div id="" class="flex items-center w-full  justify-between">
-              <div class="relative w-40 h-11 ">
-                <div class="w-full h-7 bg-gradient-to-r from-[#FF9900] absolute z-0"></div>
-                <h3 class="text-4xl font-bold me-4 absolute">
-                  Trendings
-                </h3>
-              </div>
-              <!-- <div class="h-1 bg-black rounded-full w-full "></div> -->
-              <div id="prevNext" class="flex">
-                <button class="me-10" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <path d="M25 33.2L14.1333 22.3333C12.85 21.05 12.85 18.95 14.1333 17.6667L25 6.79999" stroke="black" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-                <button type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <path d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999" stroke="black" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-        </div>
-        <div class="relative">
-          <div class="absolute bg-gradient-to-r from-white from-[1%] w-[5%] h-full z-10"></div>
-          <div class="absolute bg-gradient-to-l from-white from-[1%] w-[5%] h-full z-10 right-0"></div>
-          <div class=" w-full h-[21.375rem] mt-[1.44rem] flex  items-center overflow-auto relative">
-            <ul class="list-none flex px-12">
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="group2" class=" py-10">
-        <div class="lg:container px-10 mx-auto ">
-            <div id="" class="flex items-center w-full  justify-between">
-              <div class="relative w-40 h-11 ">
-                <div class="w-full h-7 bg-gradient-to-r from-[#FF0000] absolute z-0"></div>
-                <h3 class="text-4xl font-bold me-4 absolute">
-                  Action
-                </h3>
-              </div>
-              <!-- <div class="h-1 bg-black rounded-full w-full "></div> -->
-              <div id="prevNext" class="flex">
-                <button class="me-10" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <path d="M25 33.2L14.1333 22.3333C12.85 21.05 12.85 18.95 14.1333 17.6667L25 6.79999" stroke="black" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-                <button type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <path d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999" stroke="black" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-        </div>
-        <div class="relative">
-          <div class="absolute bg-gradient-to-r from-white from-[1%] w-[5%] h-full z-10"></div>
-          <div class="absolute bg-gradient-to-l from-white from-[1%] w-[5%] h-full z-10 right-0"></div>
-          <div class=" w-full h-[21.375rem] mt-[1.44rem] flex  items-center overflow-auto relative">
-            <ul class="list-none flex px-12">
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="group3" class=" py-10">
-        <div class="lg:container px-10 mx-auto ">
-            <div id="" class="flex items-center w-full  justify-between">
-              <div class="relative w-40 h-11 ">
-                <div class="w-full h-7 bg-gradient-to-r from-[#FF008A] absolute z-0"></div>
-                <h3 class="text-4xl font-bold me-4 absolute">
-                  Romance
-                </h3>
-              </div>
-              <!-- <div class="h-1 bg-black rounded-full w-full "></div> -->
-              <div id="prevNext" class="flex">
-                <button class="me-10" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <path d="M25 33.2L14.1333 22.3333C12.85 21.05 12.85 18.95 14.1333 17.6667L25 6.79999" stroke="black" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-                <button type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <path d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999" stroke="black" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-        </div>
-        <div class="relative">
-          <div class="absolute bg-gradient-to-r from-white from-[1%] w-[5%] h-full z-10"></div>
-          <div class="absolute bg-gradient-to-l from-white from-[1%] w-[5%] h-full z-10 right-0"></div>
-          <div class=" w-full h-[21.375rem] mt-[1.44rem] flex  items-center overflow-auto relative">
-            <ul class="list-none flex px-12">
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
-                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
-                <div class="absolute bottom-5 z-20 w-full flex justify-center">
-                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div id="group4" class=" py-10 bg-black text-white">
-        <div class="lg:container px-10 mx-auto ">
-            <div id="" class="flex items-center w-full  justify-between">
-              <div class="relative w-40 h-11 ">
-                <div class="w-full h-7 bg-gradient-to-r from-[#FF0000] absolute z-0"></div>
-                <h3 class="text-4xl font-bold me-4 absolute">
-                  Action
+              <div class="relative w-52 h-11 ">
+                <div class="w-1/2 h-1/2 bg-gradient-to-r from-[#FF9900] absolute z-0"></div>
+                <h3 class="text-3xl font-bold me-4 absolute text-white">
+                  Harry Potter
                 </h3>
               </div>
               <!-- <div class="h-1 bg-black rounded-full w-full "></div> -->
@@ -268,35 +90,174 @@
             </div>
         </div>
         <div class="relative">
-          <div class="absolute bg-gradient-to-r from-black from-[1%] w-[5%] h-full z-10"></div>
-          <div class="absolute bg-gradient-to-l from-black from-[1%] w-[5%] h-full z-10 right-0"></div>
-          <div class=" w-full h-[24.375rem] mt-[1.44rem] flex  items-center overflow-auto relative  ">
+          <div class="absolute bg-gradient-to-r from-slate-800 from-[1%] w-[5%] h-full z-10"></div>
+          <div class="absolute bg-gradient-to-l from-slate-800 from-[1%] w-[5%] h-full z-10 right-0"></div>
+          <div class=" w-full h-[21.375rem] mt-[1.44rem] flex justify-center items-center overflow-hidden relative ">
+            <ul class="list-none flex px-12" id="cards1">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="group2" class=" py-10">
+        <div class="lg:container px-10 mx-auto ">
+            <div id="" class="flex items-center w-full  justify-between">
+              <div class="relative w-40 h-11 ">
+                <div class="w-1/2 h-1/2 bg-gradient-to-r from-[#FF0000] absolute z-0"></div>
+                <h3 class="text-4xl font-bold me-4 absolute text-white">
+                  Avangers
+                </h3>
+              </div>
+              <!-- <div class="h-1 bg-black rounded-full w-full "></div> -->
+              <div id="prevNext" class="flex">
+                <button class="me-10" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M25 33.2L14.1333 22.3333C12.85 21.05 12.85 18.95 14.1333 17.6667L25 6.79999" stroke="white" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999" stroke="white" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+        </div>
+        <div class="relative">
+          <div class="absolute bg-gradient-to-r from-slate-800 from-[1%] w-[5%] h-full z-10"></div>
+          <div class="absolute bg-gradient-to-l from-slate-800 from-[1%] w-[5%] h-full z-10 right-0"></div>
+          <div class=" w-full h-full mt-[1.44rem] flex justify-center items-center overflow-hidden relative">
+            <ul class="list-none flex px-12 text-white text-center">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:left-0 after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[15rem] after:w-full relative">
+                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
+                <div class="absolute bottom-5 z-20 w-full text-left ps-5">
+                  <p class="font-['Poppins'] text-lg font-bold">Movie Name</p>
+                  <p class="font-['Poppins'] text-lg font-light">2023</p>
+                  <button class="font-['Poppins'] rounded-lg text-sm p-1 bg-blue-700 hover:bg-blue-800 focus:bg-blue-900 mt-1" type="button" >Details</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="group3" class=" py-10">
+        <div class="lg:container px-10 mx-auto ">
+            <div id="" class="flex items-center w-full  justify-between">
+              <div class="relative w-40 h-11 ">
+                <div class="w-1/2 h-1/2 bg-gradient-to-r from-[#FF008A] absolute z-0"></div>
+                <h3 class="text-4xl font-bold me-4 absolute text-white">
+                  Romance
+                </h3>
+              </div>
+              <!-- <div class="h-1 bg-black rounded-full w-full "></div> -->
+              <div id="prevNext" class="flex">
+                <button class="me-10" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M25 33.2L14.1333 22.3333C12.85 21.05 12.85 18.95 14.1333 17.6667L25 6.79999" stroke="white" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999" stroke="white" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+        </div>
+        <div class="relative w-full border border-black">
+          <div class="absolute bg-gradient-to-r from-slate-800 from-[1%] w-[5%] h-full z-10"></div>
+          <div class="absolute bg-gradient-to-l from-slate-800 from-[1%] w-[5%] h-full z-10 right-0"></div>
+          <div class=" w-full h-[21.375rem] mt-[1.44rem] flex justify-center items-center overflow-hidden relative">
+            <ul class="list-none flex px-12 text-white">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+                <p class="rounded-full border-2 border-green-600 bg-black bg-opacity-60 text-white  text-lg absolute z-10 w-9 h-9 top-5 left-4 font-['Poppins'] flex items-center justify-center">7</p>
+                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
+                <div class="absolute bottom-5 z-20 w-full flex justify-center">
+                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
+                </div>
+              </li>
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
+                <div class="absolute bottom-5 z-20 w-full flex justify-center">
+                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
+                </div>
+              </li>
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
+                <div class="absolute bottom-5 z-20 w-full flex justify-center">
+                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
+                </div>
+              </li>
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
+                <div class="absolute bottom-5 z-20 w-full flex justify-center">
+                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
+                </div>
+              </li>
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+                <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
+                <div class="absolute bottom-5 z-20 w-full flex justify-center">
+                  <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+      <div id="group4" class=" py-10 text-white">
+        <div class="lg:container px-10 mx-auto ">
+            <div id="" class="flex items-center w-full  justify-between">
+              <div class="relative w-40 h-11 ">
+                <div class="w-full h-1/2 bg-gradient-to-r from-[#FF0000] absolute z-0"></div>
+                <h3 class="text-4xl font-bold me-4 absolute text-white">
+                  Horror
+                </h3>
+              </div>
+              <!-- <div class="h-1 bg-black rounded-full w-full "></div> -->
+              <div id="prevNext" class="flex">
+                <button class="me-10" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M25 33.2L14.1333 22.3333C12.85 21.05 12.85 18.95 14.1333 17.6667L25 6.79999" stroke="white" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999" stroke="white" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+        </div>
+        <div class="relative">
+          <div class="absolute bg-gradient-to-r from-slate-800 from-[1%] w-[5%] h-full z-10"></div>
+          <div class="absolute bg-gradient-to-l from-slate-800 from-[1%] w-[5%] h-full z-10 right-0"></div>
+          <div class=" w-full h-full border mt-[1.44rem] flex justify-center items-center overflow-hidden relative  ">
             <ul class="list-none flex px-12">
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-black after:absolute after:bottom-0 after:h-[6rem] after:w-full  relative">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:border after:border-white after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full  relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
                 <div class="absolute bottom-5 z-20 w-full flex justify-center">
                   <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
                 </div>
               </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-black after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
                 <div class="absolute bottom-5 z-20 w-full flex justify-center">
                   <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
                 </div>
               </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-black after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
                 <div class="absolute bottom-5 z-20 w-full flex justify-center">
                   <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
                 </div>
               </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-black after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
                 <div class="absolute bottom-5 z-20 w-full flex justify-center">
                   <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
                 </div>
               </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-black after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
                 <div class="absolute bottom-5 z-20 w-full flex justify-center">
                   <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
@@ -310,8 +271,8 @@
         <div class="lg:container px-10 mx-auto ">
             <div id="" class="flex items-center w-full  justify-between">
               <div class="relative w-40 h-11 ">
-                <div class="w-full h-7 bg-gradient-to-r from-gray-500 absolute z-0"></div>
-                <h3 class="text-4xl font-bold me-4 absolute">
+                <div class="w-full h-1/2 bg-gradient-to-r from-gray-500 absolute z-0"></div>
+                <h3 class="text-4xl font-bold me-4 absolute text-white">
                   Crime
                 </h3>
               </div>
@@ -319,47 +280,47 @@
               <div id="prevNext" class="flex">
                 <button class="me-10" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <path d="M25 33.2L14.1333 22.3333C12.85 21.05 12.85 18.95 14.1333 17.6667L25 6.79999" stroke="black" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 33.2L14.1333 22.3333C12.85 21.05 12.85 18.95 14.1333 17.6667L25 6.79999" stroke="white" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
                 <button type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <path d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999" stroke="black" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999" stroke="white" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
               </div>
             </div>
         </div>
         <div class="relative">
-          <div class="absolute bg-gradient-to-r from-white from-[1%] w-[5%] h-full z-10"></div>
-          <div class="absolute bg-gradient-to-l from-white from-[1%] w-[5%] h-full z-10 right-0"></div>
-          <div class=" w-full h-[21.375rem] mt-[1.44rem] flex  items-center overflow-auto relative">
+          <div class="absolute bg-gradient-to-r from-slate-800 from-[1%] w-[5%] h-full z-10"></div>
+          <div class="absolute bg-gradient-to-l from-slate-800 from-[1%] w-[5%] h-full z-10 right-0"></div>
+          <div class=" w-full h-[21.375rem] mt-[1.44rem] flex justify-center items-center  border border-black overflow-hidden relative">
             <ul class="list-none flex px-12">
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t text-white after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
                 <div class="absolute bottom-5 z-20 w-full flex justify-center">
                   <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
                 </div>
               </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t text-white after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
                 <div class="absolute bottom-5 z-20 w-full flex justify-center">
                   <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
                 </div>
               </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t text-white after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
                 <div class="absolute bottom-5 z-20 w-full flex justify-center">
                   <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
                 </div>
               </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t text-white after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
                 <div class="absolute bottom-5 z-20 w-full flex justify-center">
                   <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
                 </div>
               </li>
-              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-white after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
+              <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t text-white after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
                 <div class="absolute bottom-5 z-20 w-full flex justify-center">
                   <p class="font-['Poppins'] text-xl font-bold">Movie Name</p>
@@ -369,13 +330,14 @@
           </div>
         </div>
       </div>
-
     </section>
-
+    
+    
     <script
     src="https://code.jquery.com/jquery-3.7.0.js"
     integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+    <!-- <script src="../js/omdbAPI.js"></script> -->
 </body>
 </html>
