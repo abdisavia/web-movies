@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 </head>
-<body class="bg-gray-800">
+<body class="bg-gray-800 relative">
   <!-- Navbar -->
   <nav class=" w-full h-14 fixed z-50">
     <div class="container relative md:px-2 mx-auto h-full ">
@@ -64,6 +64,7 @@
     </section>
     <!-- end Jumbotron -->
 
+    <!-- Movies Cards -->
     <section class="h-screen w-full"> 
       <div id="group1" class="my-10">
         <div class="lg:container px-10 mx-auto">
@@ -92,14 +93,13 @@
         <div class="relative">
           <div class="absolute bg-gradient-to-r from-slate-800 from-[1%] w-[5%] h-full z-10"></div>
           <div class="absolute bg-gradient-to-l from-slate-800 from-[1%] w-[5%] h-full z-10 right-0"></div>
-          <div class=" w-full h-[21.375rem] mt-[1.44rem] flex justify-center items-center overflow-hidden relative ">
-            <ul class="list-none flex px-12" id="cards1">
-
+          <div class=" w-full h-[25.375rem] mt-[1.44rem] flex items-center overflow-x-auto relative ">
+            <ul class="list-none flex px-12 text-white text-center" id="cards1">
             </ul>
           </div>
         </div>
       </div>
-      <div id="group2" class=" py-10">
+      <div id="group2" class=" py-10 relative">
         <div class="lg:container px-10 mx-auto ">
             <div id="" class="flex items-center w-full  justify-between">
               <div class="relative w-40 h-11 ">
@@ -122,11 +122,12 @@
                 </button>
               </div>
             </div>
+            
         </div>
         <div class="relative">
           <div class="absolute bg-gradient-to-r from-slate-800 from-[1%] w-[5%] h-full z-10"></div>
           <div class="absolute bg-gradient-to-l from-slate-800 from-[1%] w-[5%] h-full z-10 right-0"></div>
-          <div class=" w-full h-full mt-[1.44rem] flex justify-center items-center overflow-hidden relative">
+          <div class=" w-full h-full mt-[1.44rem] flex items-center overflow-x-auto relative">
             <ul class="list-none flex px-12 text-white text-center">
               <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:left-0 after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[15rem] after:w-full relative">
                 <img src="../img/5.jpg" alt="" class="object-cover object-center w-full h-full rounded-[1.38rem]">
@@ -139,6 +140,7 @@
             </ul>
           </div>
         </div>
+        
       </div>
       <div id="group3" class=" py-10">
         <div class="lg:container px-10 mx-auto ">
@@ -167,7 +169,7 @@
         <div class="relative w-full border border-black">
           <div class="absolute bg-gradient-to-r from-slate-800 from-[1%] w-[5%] h-full z-10"></div>
           <div class="absolute bg-gradient-to-l from-slate-800 from-[1%] w-[5%] h-full z-10 right-0"></div>
-          <div class=" w-full h-[21.375rem] mt-[1.44rem] flex justify-center items-center overflow-hidden relative">
+          <div class=" w-full h-[21.375rem] mt-[1.44rem] flex items-center overflow-x-auto  relative">
             <ul class="list-none flex px-12 text-white">
               <li class="w-[15rem] h-[20rem] bg-slate-500 mx-[1.37rem] rounded-[1.38rem] after:bg-gradient-to-t after:from-slate-800 after:absolute after:bottom-0 after:h-[6rem] after:w-full relative">
                 <p class="rounded-full border-2 border-green-600 bg-black bg-opacity-60 text-white  text-lg absolute z-10 w-9 h-9 top-5 left-4 font-['Poppins'] flex items-center justify-center">7</p>
@@ -331,7 +333,43 @@
         </div>
       </div>
     </section>
+    <!-- End Movies Cards -->
     
+    <!-- Details -->
+    <div id="details" class="bg-black/50 fixed z-50 h-full w-full top-0 flex justify-center items-center">
+      <div class="bg-white h-auto w-152 rounded-md overflow-y-auto p-5">
+        <div class="flex relative">
+          <img src="../img/5.jpg" alt="" class="w-52 h-[17rem] object-cover rounded-md" >
+          <div class="pl-5 h-52">
+            <button class="absolute right-5 top-5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>               
+            </button>
+            <h1 id="detailsTitle" class="font-bold text-3xl mb-2 font-[Poppins]">Movies Title</h1>
+            <p id="detailsDes" class="my-5 font-[Poppins] max-h-52 overflow-y-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis ullam perferendis hic iste cum veniam! Iusto dolore laborum minima fuga, rem perferendis numquam enim optio eaque molestias recusandae fugiat consequuntur aspernatur exercitationem, aliquid qui! Aliquam in optio iusto, quos aperiam, suscipit harum porro voluptates provident sunt iste at illo. Velit amet deleniti quis vel neque maxime ipsam sint, repellendus corrupti facilis, nesciunt ipsa, laborum cupiditate rem quibusdam et molestiae aspernatur? Expedita, tempore. Quas nobis, deserunt incidunt libero nisi praesentium eveniet tenetur excepturi voluptate esse fugiat cum ratione similique perspiciatis cupiditate eaque dignissimos eum tempore reiciendis magni nemo distinctio porro?</p>
+          </div>
+        </div>
+        <div class="mt-2 flex justify-center items-center gap-4">
+          <div id="ratings" class="bg-orange-500 h-15 w-20 rounded-lg text-center text-white font-[Poppins] p-1">
+            <h2>Rating</h2>
+            <p id="detailsRat">8.1/10</p>
+          </div>
+          <div class="text-white bg-slate-500 w-1/2 p-1 rounded-lg font-[Poppins] h-15 overflow-auto">
+            <h2 class="font-semibold">Genre : </h2>
+            <ul id="detailsList" class="list-none gap-2 columns-3 border">
+              <li class="border border-white px-2 rounded-full bg-white text-slate-500 font-bold"><p>Family</p></li>
+              <li class="border border-white px-2 rounded-full bg-white text-slate-500 font-bold"><p>Family</p></li>
+              <li class="border border-white px-2 rounded-full bg-white text-slate-500 font-bold"><p>Family</p></li>
+              <li class="border border-white px-2 rounded-full bg-white text-slate-500 font-bold"><p>Family</p></li>
+              <li class="border border-white px-2 rounded-full bg-white text-slate-500 font-bold"><p>Family</p></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end Details -->
     
     <script
     src="https://code.jquery.com/jquery-3.7.0.js"
