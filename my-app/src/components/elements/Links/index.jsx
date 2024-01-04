@@ -13,7 +13,7 @@ function Links(props) {
         }else if(variant == "NavLinks"){
             cls = cls + "text-black hover:border-b-2 hover:border-blue-500 cursor-pointer"
         }else if(variant == "GenreList"){
-            cls += "text-black border-b border-transparent cursor-pointer w-full block my-2 py-1 hover:border-b hover:border-blue-500 "
+            cls += "text-black rounded-sm border border-transparent cursor-pointer w-full block my-2 py-1 px-2 hover:border-b hover:border-blue-500 transition ease-in-out hover:transition-all duration-500"
         }
         return cls
     }
